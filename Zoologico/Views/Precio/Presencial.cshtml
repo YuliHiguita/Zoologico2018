@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Animales_A";
+}
+
+<h2>Precios Presencial</h2>
+
+<div class="panel panel-green">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-3">
+                <i class="fa fa fa-clock-o fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Ficha precios</legend>
+
+            <!--Precio ad-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Precio para adultos</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                        <input name="Precio para adultos" placeholder="Precio para adultos" class="form-control" type="number">
+                    </div>
+                </div>
+            </div>
+
+            <!--Precio ni-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Precio para niños</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                        <input name="Precio para niños" placeholder="Precio para niños" class="form-control" type="number">
+                    </div>
+                </div>
+            </div>
+
+            <!--Hora ap-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Horario de apertura</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="Horario de apertura" placeholder="Horario de apertura" class="form-control" type="time">
+                    </div>
+                </div>
+            </div>
+
+            <!--Hora ci-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Horario de cierre</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="Horario de cierre" placeholder="Horario de cierre" class="form-control" type="time">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success message -->
+            <div class="alert alert-success" role="alert" id="success_message">Gracias:::::::<i class="glyphicon glyphicon-thumbs-up"></i></div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning">Agregar<span class="glyphicon glyphicon-send"></span></button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</div>

@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Localizacion";
+}
+
+<h2>Hábitat animales</h2>
+
+<div class="panel panel-yellow">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-3">
+                <i class="fa fa-bank fa-5x"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+                <div class="huge">26</div>
+                <div>Total de Hábitat</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Hábitat</legend>
+
+            <!--Clase-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Clase</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
+                        <select name="Clase" class="form-control selectpicker">
+                            <option value=" ">Por favor seleccione la clase de animal</option>
+                            <option>Felinos</option>
+                            <option>Reptiles</option>
+                            <option>Roedores</option>
+                            <option>Primates</option>
+                            <option>Herpetios</option>
+                            <option>Artropodos</option>
+                            <option>Aves</option>
+                            <option>Herbivoros</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!--Id Hábitat-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Id hábitat</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-barcode"></i></span>
+                        <input name="Id hábitat" placeholder="Id hábitat" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <!--Tipo-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Tipo</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
+                        <select name="Tipo" class="form-control selectpicker">
+                            <option value=" ">Por favor seleccione el Tipo de hábitat</option>
+                            <option>Terrestre</option>
+                            <option>Aérea</option>
+                            <option>Acuática</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Tamaño-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Tamaño en metros cuadrados</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked"></i></span>
+                        <input name="Tamaño en metros cuadrados" placeholder="Tamaño en metros cuadrados" class="form-control" type="number">
+                    </div>
+                </div>
+            </div>
+          
+            <!--Capacidad-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Capacidad</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+                        <input name="Capacidad" placeholder="Capacidad" class="form-control" type="number">
+                    </div>
+                </div>
+            </div>
+
+            <!--acceso-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Visitable</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
+                        <select name="Tipo" class="form-control selectpicker">
+                            <option value=" ">Por favor seleccione si se tiene acceso</option>
+                            <option>Si</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Success message -->
+            <div class="alert alert-success" role="alert" id="success_message">Gracias:::::::<i class="glyphicon glyphicon-thumbs-up"></i></div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning">Agregar<span class="glyphicon glyphicon-send"></span></button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
