@@ -18,7 +18,7 @@
 </div>
 <div class="container">
 
-    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+    <form class="well form-horizontal" action="/Financiero/Ingresos " method="post" id="contact_form">
         <fieldset>
 
             <!-- Form Name -->
@@ -30,7 +30,7 @@
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-                        <select name="País de origen" class="form-control selectpicker">
+                        <select id="Modalidad" name="Modalidad" class="form-control selectpicker">
                             <option value=" ">Por favor seleccione la modalidad</option>
                             <option>Virtual</option>
                             <option>Presencial</option>
@@ -45,7 +45,7 @@
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-                        <select name="País de origen" class="form-control selectpicker">
+                        <select id="Tipo_de_usuario" name="Tipo_de_usuario" class="form-control selectpicker">
                             <option value=" ">Por favor seleccione el tipo de usuario</option>
                             <option>Adulto</option>
                             <option>Niño</option>
@@ -60,7 +60,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-scale"></i></span>
-                        <input name="Numero de visitas" placeholder="Numero de visitas" class="form-control" type="number">
+                        <input id="Numero_de_visitas" required maxlength="100" name="Numero_de_visitas" placeholder="Numero de visitas" class="form-control" type="number">
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        <input type="text" class="form-control datepicker" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                        <input id="Fecha" required maxlength="10" name="Fecha" type="text" class="form-control datepicker" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
                     </div>
                 </div>
             </div>

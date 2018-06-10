@@ -170,7 +170,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Animal.cs" />
+    <Compile Include="Models\Asignacion.cs" />
+    <Compile Include="Models\Aves.cs" />
+    <Compile Include="Models\Enfermeria.cs" />
+    <Compile Include="Models\Gastos.cs" />
+    <Compile Include="Models\Habitat.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Ingresos.cs" />
+    <Compile Include="Models\Mamifero.cs" />
+    <Compile Include="Models\Presencial.cs" />
+    <Compile Include="Models\Virtual.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

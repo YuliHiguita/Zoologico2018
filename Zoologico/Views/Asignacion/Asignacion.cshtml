@@ -18,7 +18,7 @@
 </div>
 <div class="container">
 
-    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+    <form class="well form-horizontal" action="/Asignacion/Asignacion " method="post" id="contact_form">
         <fieldset>
 
             <!-- Form Name -->
@@ -31,7 +31,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-piggy-bank"></i></span>
-                        <input name="Id animal" placeholder="Id animal" class="form-control" type="number">
+                        <input id="Id_animal" required maxlength="100" name="Id_animal" placeholder="Id animal" class="form-control" type="number">
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-barcode"></i></span>
-                        <input name="Id hábitat" placeholder="Id hábitat" class="form-control" type="text">
+                        <input id="Id_habitat" required maxlength="100" name="Id_habitat" placeholder="Id hábitat" class="form-control" type="text">
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        <input type="text" class="form-control datepicker" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                        <input id="Fecha_de_ingreso" required maxlength="10" name="Fecha_de_ingreso" type="text" class="form-control datepicker" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
                     </div>
                     <!-- /.input group -->
                 </div>
@@ -66,7 +66,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        <input type="text" class="form-control datepicker" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                        <input id="Fecha_de_salida" required maxlength="10" name="Fecha_de_salida" type="text" class="form-control datepicker" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
                     </div>
                 </div>
             </div>

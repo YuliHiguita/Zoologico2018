@@ -20,7 +20,7 @@
 </div>
 <div class="container">
 
-    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+    <form class="well form-horizontal" action="/Localizacion/Hábitat " method="post" id="contact_form">
         <fieldset>
 
             <!-- Form Name -->
@@ -32,7 +32,7 @@
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
-                        <select name="Clase" class="form-control selectpicker">
+                        <select id="Clase" name="Clase" class="form-control selectpicker">
                             <option value=" ">Por favor seleccione la clase de animal</option>
                             <option>Felinos</option>
                             <option>Reptiles</option>
@@ -54,7 +54,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-barcode"></i></span>
-                        <input name="Id hábitat" placeholder="Id hábitat" class="form-control" type="text">
+                        <input id="Id_habitat" required maxlength="100" name="Id habitat" placeholder="Id hábitat" class="form-control" type="text">
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
-                        <select name="Tipo" class="form-control selectpicker">
+                        <select id="Tipo" name="Tipo" class="form-control selectpicker">
                             <option value=" ">Por favor seleccione el Tipo de hábitat</option>
                             <option>Terrestre</option>
                             <option>Aérea</option>
@@ -84,7 +84,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked"></i></span>
-                        <input name="Tamaño en metros cuadrados" placeholder="Tamaño en metros cuadrados" class="form-control" type="number">
+                        <input id="Tamaño_en_metros_cuadrados" required maxlength="100" name="Tamaño_en_metros_cuadrados" placeholder="Tamaño en metros cuadrados" class="form-control" type="number">
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
-                        <input name="Capacidad" placeholder="Capacidad" class="form-control" type="number">
+                        <input id="Capacidad" required maxlength="100" name="Capacidad" placeholder="Capacidad" class="form-control" type="number">
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
-                        <select name="Tipo" class="form-control selectpicker">
+                        <select id="Visitable" name="Visiyable" class="form-control selectpicker">
                             <option value=" ">Por favor seleccione si se tiene acceso</option>
                             <option>Si</option>
                             <option>No</option>

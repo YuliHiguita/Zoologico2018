@@ -18,7 +18,7 @@
 </div>
 <div class="container">
 
-    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+    <form class="well form-horizontal" action="/Financiero/Gastos" method="post" id="contact_form">
         <fieldset>
 
             <!-- Form Name -->
@@ -30,7 +30,7 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-user"></i></span>
-                        <input name="Id animal" placeholder="Id animal" class="form-control" type="text">
+                        <input id="Id_animal" required maxlength="100" name="Id_animal" placeholder="Id animal" class="form-control" type="text">
                     </div>
                 </div>
             </div>
@@ -41,17 +41,18 @@
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-usd"></i></span>
-                        <input name="Costo" placeholder="Costo" class="form-control" type="number">
+                        <input id="Costo" required max="100" name="Costo" placeholder="Costo" class="form-control" type="number">
                     </div>
                 </div>
             </div>
+
             <!--fecha adquisicion-->
             <div class="form-group">
                 <label class="col-md-4 control-label">Fecha de adquisicion</label>
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        <input type="text" class="form-control datepicker" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                        <input id="Fecha_de_adquisicion" name="Fecha_de_adquisicion" required maxlength="10" type="text" class="form-control datepicker" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
                     </div>
                 </div>
             </div>
@@ -62,7 +63,7 @@
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-                        <select name="País de origen" class="form-control selectpicker">
+                        <select  id="Estado" name="Estado" class="form-control selectpicker">
                             <option value=" ">Por favor seleccione el estado de la adquisicion</option>
                             <option>Pago</option>
                             <option>Por pagar</option> 
